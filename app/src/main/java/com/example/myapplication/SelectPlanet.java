@@ -54,7 +54,7 @@ public class SelectPlanet extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 context = getApplicationContext();
-                Intent intent = new Intent(context,PlaceSearchActivity.class);
+                Intent intent = new Intent(context,MainActivity.class);
                 intent.putExtra("planetKey",planetId);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
